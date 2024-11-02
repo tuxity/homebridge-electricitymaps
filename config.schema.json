@@ -1,17 +1,29 @@
 {
-  "pluginAlias": "ExampleHomebridgePlugin",
+  "pluginAlias": "ElectricityMaps",
   "pluginType": "platform",
   "singular": true,
-  "strictValidation": false,
   "schema": {
     "type": "object",
     "properties": {
-      "name": {
-        "title": "Name",
+      "platform": {
         "type": "string",
-        "required": true,
-        "default": "Example Dynamic Platform"
+        "title": "Platform Name",
+        "default": "ElectricityMaps",
+        "readOnly": true
+      },
+      "apiKey": {
+        "type": "string",
+        "title": "API Key",
+        "description": "Your API key from Electricity Maps for accessing the grid data.",
+        "required": true
+      },
+      "zone": {
+        "type": "string",
+        "title": "Zone Code",
+        "description": "The zone code to specify which area’s electricity data to fetch (e.g., DE for Germany, FR for France).",
+        "required": true
       }
-    }
+    },
+    "required": ["apiKey", "zone"]
   }
 }

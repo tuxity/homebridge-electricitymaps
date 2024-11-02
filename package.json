@@ -1,22 +1,22 @@
 {
-  "name": "homebridge-plugin-name",
-  "displayName": "Plugin Name",
+  "name": "homebridge-electricitymaps",
+  "displayName": "Homebridge Electricity Maps",
   "type": "module",
   "version": "1.0.0",
-  "private": true,
-  "description": "A short description about what your plugin does.",
-  "author": "Your Name",
+  "description": "A Homebridge plugin to display local grid electricity data using Electricity Maps API",
+  "author": "Kèvin Darcel",
   "license": "Apache-2.0",
-  "homepage": "https://github.com/USERNAME/GITHUB_PROJECT_NAME#readme",
+  "homepage": "https://github.com/tuxity/homebridge-electricitymaps#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/USERNAME/GITHUB_PROJECT_NAME.git"
+    "url": "git+https://github.com/tuxity/homebridge-electricitymaps.git"
   },
   "bugs": {
-    "url": "https://github.com/USERNAME/GITHUB_PROJECT_NAME/issues"
+    "url": "https://github.com/tuxity/homebridge-electricitymaps/issues"
   },
   "keywords": [
-    "homebridge-plugin"
+    "homebridge-plugin",
+    "electricitymaps"
   ],
   "main": "dist/index.js",
   "engines": {
@@ -40,5 +40,8 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3",
     "typescript-eslint": "^8.11.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.7"
   }
 }
