@@ -2,7 +2,7 @@
   "name": "homebridge-electricitymaps",
   "displayName": "Homebridge Electricity Maps",
   "type": "module",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A Homebridge plugin to display local grid electricity data using Electricity Maps API",
   "author": "Kèvin Darcel",
   "license": "Apache-2.0",
