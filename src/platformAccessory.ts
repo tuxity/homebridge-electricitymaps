@@ -16,8 +16,8 @@ export class ElectricityMapsAccessory {
   ) {
     // Set up Carbon Intensity Sensor
     this.carbonIntensityService = this.accessory.getService('Carbon Intensity')
-      || this.accessory.addService(this.platform.Service.LightSensor, 'Carbon Intensity', 'carbon-intensity');
-    this.carbonIntensityService.getCharacteristic(this.platform.Characteristic.CurrentAmbientLightLevel)
+      || this.accessory.addService(this.platform.Service.CarbonDioxideSensor, 'Carbon Intensity', 'carbon-intensity');
+    this.carbonIntensityService.getCharacteristic(this.platform.Characteristic.CarbonDioxideLevel)
       .onGet(this.getCarbonIntensity.bind(this));
 
     // Set up Low-Carbon Percentage Sensor
@@ -59,7 +59,7 @@ export class ElectricityMapsAccessory {
         this.renewablePercentage = metrics.renewablePercentage;
 
         // Update HomeKit characteristics
-        this.carbonIntensityService.updateCharacteristic(this.platform.Characteristic.CurrentAmbientLightLevel, this.carbonIntensity);
+        this.carbonIntensityService.updateCharacteristic(this.platform.Characteristic.CarbonDioxideLevel, this.carbonIntensity);
         this.fossilFreeService.updateCharacteristic(this.platform.Characteristic.CurrentRelativeHumidity, this.fossilFreePercentage);
         this.renewableService.updateCharacteristic(this.platform.Characteristic.BatteryLevel, this.renewablePercentage);
       }
