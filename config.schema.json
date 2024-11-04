@@ -5,11 +5,11 @@
   "schema": {
     "type": "object",
     "properties": {
-      "platform": {
+      "name": {
         "type": "string",
-        "title": "Platform Name",
+        "title": "Name",
         "default": "ElectricityMaps",
-        "readOnly": true
+        "required": true
       },
       "apiKey": {
         "type": "string",

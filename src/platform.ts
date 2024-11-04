@@ -27,6 +27,8 @@ export class ElectricityMapsPlatform implements DynamicPlatformPlugin {
     this.Service = this.api.hap.Service;
     this.Characteristic = this.api.hap.Characteristic;
 
+    this.log.debug('Finished initializing platform:', this.config.name);
+
     if (!this.config.apiKey || !this.config.zone) {
       this.log.error('API key and zone must be set in the Homebridge configuration.');
       return;
