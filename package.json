@@ -4,7 +4,7 @@
   "type": "module",
   "version": "2.0.1",
   "description": "A Homebridge plugin to display local grid electricity data using Electricity Maps API",
-  "author": "Kèvin Darcel",
+  "author": "Kévin Darcel",
   "license": "Apache-2.0",
   "homepage": "https://github.com/tuxity/homebridge-electricitymaps#readme",
   "repository": {
