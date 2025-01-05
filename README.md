@@ -1,5 +1,7 @@
 # homebridge-electricitymaps
 
+[![npm](https://badgen.net/npm/v/homebridge-electricitymaps) ![npm](https://badgen.net/npm/dt/homebridge-electricitymaps)](https://www.npmjs.com/package/homebridge-electricitymaps) [![verified-by-homebridge](https://badgen.net/badge/homebridge/verified/purple)](https://github.com/homebridge/homebridge/wiki/Verified-Plugins)
+
 This is a Homebridge plugin that integrates with the [Electricity Maps API](https://docs.electricitymaps.com/) to display real-time electricity carbon intensity, low-carbon energy percentage, and renewable energy percentage as sensors in Apple HomeKit.
 
 ## Features
